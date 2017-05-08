@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.xlythe.calculator.material;
+package com.xlythe.calculator.material.activities;
 
 import android.graphics.Rect;
 import android.graphics.drawable.Animatable;
@@ -28,6 +28,7 @@ import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.widget.Toast;
 
+import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.drawable.AnimatingDrawable;
 import com.xlythe.calculator.material.view.CalculatorPadLayout;
 import com.xlythe.view.floating.AnimationFinishedListener;
@@ -38,7 +39,7 @@ import io.codetail.animation.ViewAnimationUtils;
 /**
  * Controls the fab and what pages are shown / hidden.
  */
-public abstract class PanelSwitchingCalculator extends BasicCalculator {
+public abstract class PanelSwitchingCalculatorActivity extends BasicCalculatorActivity {
 
     // instance state keys
     private static final String KEY_PANEL = NAME + "_panel";

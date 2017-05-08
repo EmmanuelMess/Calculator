@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.xlythe.calculator.material;
+package com.xlythe.calculator.material.activities;
 
 import android.animation.Animator;
 import android.os.Bundle;
@@ -26,6 +26,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.xlythe.calculator.material.GraphController;
+import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.view.DisplayOverlay;
 import com.xlythe.calculator.material.view.FormattedNumberEditText;
 import com.xlythe.calculator.material.view.GraphView;
@@ -37,7 +39,7 @@ import java.util.Locale;
 /**
  * Adds graphing and base switching to the basic calculator.
  */
-public abstract class GraphingCalculator extends HexCalculator {
+public abstract class GraphingCalculatorActivity extends HexCalculatorActivity {
 
     private DisplayOverlay mDisplayView;
     private FormattedNumberEditText mFormulaEditText;

@@ -43,7 +43,7 @@
             android:resource="@dimen/app_minimumsize_h" />
 
         <activity
-            android:name=".Calculator"
+            android:name=".activities.CalculatorActivity"
             android:exported="true"
             android:theme="@style/Theme.Calculator"
             android:windowSoftInputMode="stateAlwaysHidden">

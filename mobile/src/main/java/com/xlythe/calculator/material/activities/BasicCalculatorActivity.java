@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.xlythe.calculator.material;
+package com.xlythe.calculator.material.activities;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -40,7 +40,12 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.xlythe.calculator.material.CalculatorExpressionEvaluator;
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator.EvaluateCallback;
+import com.xlythe.calculator.material.CalculatorExpressionTokenizer;
+import com.xlythe.calculator.material.Clipboard;
+import com.xlythe.calculator.material.HistoryAdapter;
+import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.calculator.material.view.CalculatorPadView;
 import com.xlythe.calculator.material.view.DisplayOverlay;
@@ -63,7 +68,7 @@ import io.codetail.widget.RevealView;
 /**
  * A very basic calculator. Maps button clicks to the display, and solves on each key press.
  */
-public abstract class BasicCalculator extends Activity
+public abstract class BasicCalculatorActivity extends Activity
         implements OnTextSizeChangeListener, EvaluateCallback, OnLongClickListener {
 
     /**
@@ -101,7 +106,7 @@ public abstract class BasicCalculator extends Activity
             if (mCurrentState != CalculatorState.GRAPHING) {
                 setState(CalculatorState.INPUT);
             }
-            mEvaluator.evaluate(editable, BasicCalculator.this);
+            mEvaluator.evaluate(editable, BasicCalculatorActivity.this);
         }
     };
     private View mCurrentButton;

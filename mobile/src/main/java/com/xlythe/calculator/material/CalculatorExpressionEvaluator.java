@@ -15,6 +15,7 @@
 */
 package com.xlythe.calculator.material;
 
+import com.xlythe.calculator.material.activities.CalculatorActivity;
 import com.xlythe.math.Base;
 import com.xlythe.math.Solver;
 
@@ -38,7 +39,7 @@ public class CalculatorExpressionEvaluator {
 
         try {
             if (expr.length() == 0 || Double.valueOf(expr) != null) {
-                callback.onEvaluate(expr, null, Calculator.INVALID_RES_ID);
+                callback.onEvaluate(expr, null, CalculatorActivity.INVALID_RES_ID);
                 return;
             }
         } catch (NumberFormatException e) {
@@ -48,7 +49,7 @@ public class CalculatorExpressionEvaluator {
         try {
             String result = mSolver.solve(expr);
             result = mTokenizer.getLocalizedExpression(result);
-            callback.onEvaluate(expr, result, Calculator.INVALID_RES_ID);
+            callback.onEvaluate(expr, result, CalculatorActivity.INVALID_RES_ID);
         } catch (SyntaxException e) {
             callback.onEvaluate(expr, null, R.string.error);
         }
@@ -57,7 +58,7 @@ public class CalculatorExpressionEvaluator {
     public void setBase(String expr, Base base, EvaluateCallback callback) {
         try {
             String result = mSolver.getBaseModule().setBase(expr, base);
-            callback.onEvaluate(expr, result, Calculator.INVALID_RES_ID);
+            callback.onEvaluate(expr, result, CalculatorActivity.INVALID_RES_ID);
         } catch (SyntaxException e) {
             callback.onEvaluate(expr, null, R.string.error);
         }

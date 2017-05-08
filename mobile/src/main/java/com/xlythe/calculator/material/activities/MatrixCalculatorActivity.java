@@ -13,18 +13,19 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.xlythe.calculator.material;
+package com.xlythe.calculator.material.activities;
 
 import android.os.Bundle;
 import android.view.View;
 
+import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.view.FormattedNumberEditText;
 import com.xlythe.calculator.material.view.MatrixComponent;
 
 /**
  * Adds graphing and base switching to the basic calculator.
  */
-public abstract class MatrixCalculator extends GraphingCalculator {
+public abstract class MatrixCalculatorActivity extends GraphingCalculatorActivity {
 
     private FormattedNumberEditText mFormulaEditText;
 

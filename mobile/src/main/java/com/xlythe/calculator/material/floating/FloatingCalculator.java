@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ViewSwitcher;
 
-import com.xlythe.calculator.material.Calculator;
+import com.xlythe.calculator.material.activities.CalculatorActivity;
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator;
 import com.xlythe.calculator.material.CalculatorExpressionTokenizer;
 import com.xlythe.calculator.material.Clipboard;
@@ -113,7 +113,7 @@ public class FloatingCalculator extends FloatingView {
                             @Override
                             public void onEvaluate(String expr, String result, int errorResourceId) {
                                 mDisplay.showNext();
-                                if (errorResourceId != Calculator.INVALID_RES_ID) {
+                                if (errorResourceId != CalculatorActivity.INVALID_RES_ID) {
                                     onError(errorResourceId);
                                 } else {
                                     setText(result);

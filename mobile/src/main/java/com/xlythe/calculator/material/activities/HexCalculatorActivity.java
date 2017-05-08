@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.xlythe.calculator.material;
+package com.xlythe.calculator.material.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -29,6 +29,9 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator.EvaluateCallback;
+import com.xlythe.calculator.material.CalculatorSettings;
+import com.xlythe.calculator.material.NumberBaseManager;
+import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.calculator.material.view.FormattedNumberEditText;
 import com.xlythe.math.Base;
@@ -40,7 +43,7 @@ import java.util.Locale;
 /**
  * Adds graphing and base switching to the basic calculator.
  */
-public abstract class HexCalculator extends PanelSwitchingCalculator {
+public abstract class HexCalculatorActivity extends PanelSwitchingCalculatorActivity {
 
     // instance state keys
     private static final String KEY_BASE = NAME + "_base";
@@ -208,7 +211,7 @@ public abstract class HexCalculator extends PanelSwitchingCalculator {
                 final int DEC = 0;
                 final int HEX = 1;
                 final int BIN = 2;
-                final PopupMenu popupMenu = new PopupMenu(HexCalculator.this, mInfoView);
+                final PopupMenu popupMenu = new PopupMenu(HexCalculatorActivity.this, mInfoView);
                 final Menu menu = popupMenu.getMenu();
                 menu.add(0, DEC, menu.size(), R.string.desc_dec);
                 menu.add(0, HEX, menu.size(), R.string.desc_hex);
@@ -245,7 +248,7 @@ public abstract class HexCalculator extends PanelSwitchingCalculator {
             public void onClick(View v) {
                 final int RAD = 0;
                 final int DEG = 1;
-                final PopupMenu popupMenu = new PopupMenu(HexCalculator.this, mInfoView);
+                final PopupMenu popupMenu = new PopupMenu(HexCalculatorActivity.this, mInfoView);
                 final Menu menu = popupMenu.getMenu();
                 menu.add(0, RAD, menu.size(), R.string.radians);
                 menu.add(0, DEG, menu.size(), R.string.degrees);
@@ -264,7 +267,7 @@ public abstract class HexCalculator extends PanelSwitchingCalculator {
                         if (getState() != CalculatorState.GRAPHING) {
                             setState(CalculatorState.INPUT);
                         }
-                        getEvaluator().evaluate(mFormulaEditText.getCleanText(), HexCalculator.this);
+                        getEvaluator().evaluate(mFormulaEditText.getCleanText(), HexCalculatorActivity.this);
                         return true;
                     }
                 });

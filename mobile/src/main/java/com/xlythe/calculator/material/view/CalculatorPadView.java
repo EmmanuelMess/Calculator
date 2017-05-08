@@ -28,7 +28,7 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewTreeObserver;
 
-import com.xlythe.calculator.material.Calculator;
+import com.xlythe.calculator.material.activities.CalculatorActivity;
 import com.xlythe.calculator.material.R;
 import com.xlythe.view.floating.AnimationFinishedListener;
 
@@ -341,19 +341,19 @@ public class CalculatorPadView extends RevealFrameLayout {
     }
 
     protected void showFab() {
-        ((Calculator) getContext()).showFab();
+        ((CalculatorActivity) getContext()).showFab();
     }
 
     protected void hideFab() {
-        ((Calculator) getContext()).hideFab();
+        ((CalculatorActivity) getContext()).hideFab();
     }
 
     protected void showTray() {
-        ((Calculator) getContext()).showTray();
+        ((CalculatorActivity) getContext()).showTray();
     }
 
     protected void hideTray() {
-        ((Calculator) getContext()).hideTray();
+        ((CalculatorActivity) getContext()).hideTray();
     }
 
     private void setEnabled(SolidLayout view, boolean enabled) {
