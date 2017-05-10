@@ -19,6 +19,9 @@
     <!-- Name of the application. [CHAR_LIMIT=NONE] -->
     <string name="app_name">Calculator</string>
 
+    <!--Crash toast text-->
+    <string name="crash_toast_text">The app has closed unexpectedly, an error report has been sent</string>
+
     <!-- Error displayed when expression evaluates to NaN. [CHAR_LIMIT=14] -->
     <!-- Error displayed when expression contains a syntax error. [CHAR_LIMIT=14] -->
     <string name="error">Error</string>
