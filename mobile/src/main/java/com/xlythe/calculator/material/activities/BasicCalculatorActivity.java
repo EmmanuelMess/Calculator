@@ -46,6 +46,7 @@ import com.xlythe.calculator.material.CalculatorExpressionTokenizer;
 import com.xlythe.calculator.material.Clipboard;
 import com.xlythe.calculator.material.HistoryAdapter;
 import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.utils.SimpleTextWatcher;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.calculator.material.view.CalculatorPadView;
 import com.xlythe.calculator.material.view.DisplayOverlay;
@@ -92,15 +93,7 @@ public abstract class BasicCalculatorActivity extends Activity
     private View mDeleteButton;
     private EqualsImageButton mEqualButton;
     private View mClearButton;
-    private final TextWatcher mFormulaTextWatcher = new TextWatcher() {
-        @Override
-        public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
-        }
-
-        @Override
-        public void onTextChanged(CharSequence charSequence, int start, int count, int after) {
-        }
-
+    private final TextWatcher mFormulaTextWatcher = new SimpleTextWatcher() {
         @Override
         public void afterTextChanged(Editable editable) {
             if (mCurrentState != CalculatorState.GRAPHING) {

@@ -22,6 +22,7 @@ import android.text.Html;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
 
+import com.emmanuelmess.modularcalculator.utils.SimpleTextWatcher;
 import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.math.BaseModule;
@@ -47,15 +48,7 @@ public class FormattedNumberEditText extends NumberEditText {
     private boolean mTextWatchersEnabled = true;
     private EquationFormatter mEquationFormatter;
     private Solver mSolver;
-    private final TextWatcher mTextWatcher = new TextWatcher() {
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-        }
-
+    private final TextWatcher mTextWatcher = new SimpleTextWatcher() {
         @Override
         public void afterTextChanged(Editable s) {
             if (!mTextWatchersEnabled || mSolver == null || getSelectionStart() == -1) return;
