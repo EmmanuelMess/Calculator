@@ -28,10 +28,10 @@ import android.view.View;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator.EvaluateCallback;
 import com.xlythe.calculator.material.CalculatorSettings;
 import com.xlythe.calculator.material.NumberBaseManager;
-import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.calculator.material.view.FormattedNumberEditText;
 import com.xlythe.math.Base;

@@ -8,7 +8,8 @@ import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
+
 
 /**
  * @author Emmanuel

@@ -18,7 +18,7 @@ package com.xlythe.calculator.material.activities;
 import android.os.Bundle;
 import android.view.View;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.view.FormattedNumberEditText;
 import com.xlythe.calculator.material.view.MatrixComponent;
 

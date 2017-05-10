@@ -25,6 +25,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.view.GraphView;
 import com.xlythe.calculator.material.view.HistoryLine;
 import com.xlythe.math.Constants;

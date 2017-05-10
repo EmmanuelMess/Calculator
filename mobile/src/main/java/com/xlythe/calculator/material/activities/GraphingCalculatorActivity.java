@@ -26,8 +26,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.GraphController;
-import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.view.DisplayOverlay;
 import com.xlythe.calculator.material.view.FormattedNumberEditText;
 import com.xlythe.calculator.material.view.GraphView;

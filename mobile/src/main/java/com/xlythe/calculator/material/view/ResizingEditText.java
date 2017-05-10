@@ -25,7 +25,7 @@ import android.util.TypedValue;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.util.TextUtil;
 
 /**

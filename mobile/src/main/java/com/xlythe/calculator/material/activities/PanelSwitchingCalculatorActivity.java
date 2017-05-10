@@ -28,7 +28,7 @@ import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.widget.Toast;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.drawable.AnimatingDrawable;
 import com.xlythe.calculator.material.view.CalculatorPadLayout;
 import com.xlythe.view.floating.AnimationFinishedListener;

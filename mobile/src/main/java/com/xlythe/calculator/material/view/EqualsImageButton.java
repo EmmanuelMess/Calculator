@@ -20,7 +20,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
+
 
 public class EqualsImageButton extends ImageButton {
     private static final int[] STATE_EQUALS = {R.attr.state_equals};

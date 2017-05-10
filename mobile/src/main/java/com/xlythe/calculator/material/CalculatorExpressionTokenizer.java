@@ -17,6 +17,7 @@ package com.xlythe.calculator.material;
 
 import android.content.Context;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.math.Constants;
 
 import java.util.LinkedList;

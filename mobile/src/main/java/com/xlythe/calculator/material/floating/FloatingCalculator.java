@@ -17,11 +17,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ViewSwitcher;
 
-import com.xlythe.calculator.material.activities.CalculatorActivity;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator;
 import com.xlythe.calculator.material.CalculatorExpressionTokenizer;
 import com.xlythe.calculator.material.Clipboard;
-import com.xlythe.calculator.material.R;
+import com.xlythe.calculator.material.activities.CalculatorActivity;
 import com.xlythe.calculator.material.view.BackspaceImageButton;
 import com.xlythe.calculator.material.view.CalculatorEditText;
 import com.xlythe.math.Constants;

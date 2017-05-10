@@ -10,8 +10,8 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.RemoteViews;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.CalculatorExpressionTokenizer;
-import com.xlythe.calculator.material.R;
 import com.xlythe.math.Base;
 import com.xlythe.math.Constants;
 import com.xlythe.math.EquationFormatter;

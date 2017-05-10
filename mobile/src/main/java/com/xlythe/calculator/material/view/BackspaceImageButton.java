@@ -21,7 +21,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
+
 
 public class BackspaceImageButton extends ImageButton {
     private static final int[] STATE_DELETE = {R.attr.state_delete};

@@ -3,8 +3,6 @@ package com.emmanuelmess.modularcalculator;
 import android.app.Application;
 import android.content.Context;
 
-import com.xlythe.calculator.material.R;
-
 import org.acra.ACRA;
 import org.acra.ReportingInteractionMode;
 import org.acra.annotation.ReportsCrashes;

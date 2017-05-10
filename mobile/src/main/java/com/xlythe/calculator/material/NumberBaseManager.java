@@ -1,5 +1,6 @@
 package com.xlythe.calculator.material;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.math.Base;
 
 import java.util.Arrays;

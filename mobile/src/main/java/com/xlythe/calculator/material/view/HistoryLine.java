@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.math.History;
 import com.xlythe.math.HistoryEntry;
 

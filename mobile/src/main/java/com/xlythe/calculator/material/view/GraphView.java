@@ -16,7 +16,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.math.Point;
 
 import java.text.DecimalFormat;

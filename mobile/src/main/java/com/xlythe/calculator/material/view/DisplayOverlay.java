@@ -23,8 +23,8 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.HistoryAdapter;
-import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.math.Solver;
 import com.xlythe.view.floating.AnimationFinishedListener;

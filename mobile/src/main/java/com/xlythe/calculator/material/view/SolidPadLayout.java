@@ -8,7 +8,8 @@ import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
+
 
 /**
  * A ViewGroup that can be set to disallow touch events on its parents or children.

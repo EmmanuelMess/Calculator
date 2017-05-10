@@ -28,8 +28,8 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewTreeObserver;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.activities.CalculatorActivity;
-import com.xlythe.calculator.material.R;
 import com.xlythe.view.floating.AnimationFinishedListener;
 
 import io.codetail.widget.RevealFrameLayout;

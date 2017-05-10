@@ -40,13 +40,13 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.emmanuelmess.modularcalculator.R;
+import com.emmanuelmess.modularcalculator.utils.SimpleTextWatcher;
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator;
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator.EvaluateCallback;
 import com.xlythe.calculator.material.CalculatorExpressionTokenizer;
 import com.xlythe.calculator.material.Clipboard;
 import com.xlythe.calculator.material.HistoryAdapter;
-import com.xlythe.calculator.material.R;
-import com.emmanuelmess.modularcalculator.utils.SimpleTextWatcher;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.calculator.material.view.CalculatorPadView;
 import com.xlythe.calculator.material.view.DisplayOverlay;
@@ -358,6 +358,7 @@ public abstract class BasicCalculatorActivity extends Activity
 
     public void onButtonClick(View view) {
         mCurrentButton = view;
+
         switch (view.getId()) {
             case R.id.eq:
                 onEquals();

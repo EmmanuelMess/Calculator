@@ -3,6 +3,8 @@ package io.codetail.widget;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Path;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -34,6 +36,7 @@ public class RevealFrameLayout extends FrameLayout implements RevealAnimator {
         mRevealPath = new Path();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public RevealFrameLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         mRevealPath = new Path();

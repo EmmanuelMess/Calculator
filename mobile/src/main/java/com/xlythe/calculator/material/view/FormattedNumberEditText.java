@@ -22,8 +22,8 @@ import android.text.Html;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
 
+import com.emmanuelmess.modularcalculator.R;
 import com.emmanuelmess.modularcalculator.utils.SimpleTextWatcher;
-import com.xlythe.calculator.material.R;
 import com.xlythe.calculator.material.util.TextUtil;
 import com.xlythe.math.BaseModule;
 import com.xlythe.math.Constants;

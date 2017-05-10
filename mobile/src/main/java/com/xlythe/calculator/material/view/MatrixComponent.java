@@ -8,7 +8,7 @@ import android.graphics.drawable.NinePatchDrawable;
 import android.os.SystemClock;
 import android.util.Log;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.view.CalculatorEditText.MathSpannable;
 import com.xlythe.calculator.material.view.CalculatorEditText.SpanComponent;
 import com.xlythe.math.Constants;

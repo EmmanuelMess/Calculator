@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
 import com.xlythe.calculator.material.view.SolidLayout;
 import com.xlythe.calculator.material.view.SolidPadLayout;
 import com.xlythe.math.Constants;

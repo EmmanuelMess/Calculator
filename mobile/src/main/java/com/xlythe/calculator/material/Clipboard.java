@@ -5,6 +5,8 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.emmanuelmess.modularcalculator.R;
+
 /**
  * Simplify Android copy/paste
  */

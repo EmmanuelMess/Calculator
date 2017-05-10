@@ -6,7 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 
-import com.xlythe.calculator.material.R;
+import com.emmanuelmess.modularcalculator.R;
+
 
 /**
  * When the shortcut icon is pressed, use this Activity to launch the overlay Service
