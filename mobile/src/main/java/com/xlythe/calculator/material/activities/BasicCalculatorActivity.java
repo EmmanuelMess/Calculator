@@ -22,7 +22,6 @@ import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.animation.ValueAnimator.AnimatorUpdateListener;
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -40,6 +39,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.emmanuelmess.modularcalculator.LoaderActivity;
 import com.emmanuelmess.modularcalculator.R;
 import com.emmanuelmess.modularcalculator.utils.SimpleTextWatcher;
 import com.xlythe.calculator.material.CalculatorExpressionEvaluator;
@@ -69,7 +69,7 @@ import io.codetail.widget.RevealView;
 /**
  * A very basic calculator. Maps button clicks to the display, and solves on each key press.
  */
-public abstract class BasicCalculatorActivity extends Activity
+public abstract class BasicCalculatorActivity extends LoaderActivity
         implements OnTextSizeChangeListener, EvaluateCallback, OnLongClickListener {
 
     /**
