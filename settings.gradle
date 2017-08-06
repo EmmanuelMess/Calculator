@@ -1,1 +1,1 @@
-include ':mobile', ':legacy-mobile', ':wear', ':glass', ':GDK-ProgressBar', ':FloatingView', ':circularreveal'
+include ':mobile', ':GDK-ProgressBar', ':circularreveal'

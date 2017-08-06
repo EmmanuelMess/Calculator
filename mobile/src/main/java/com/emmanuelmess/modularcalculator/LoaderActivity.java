@@ -19,6 +19,8 @@ public class LoaderActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         modules = Loader.loadAllModules(this);
+
+        
     }
 
     public ArrayList<Module> getModules() {
